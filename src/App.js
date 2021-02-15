@@ -18,7 +18,7 @@ class App extends Component {
   }
 
   async componentDidMount() {  
-    const users = await axios.get('http://jsonplaceholder.typicode.com/users')  
+    const users = await axios.get('https://jsonplaceholder.typicode.com/users')  
       
     this.setState({
       monsters: users.data
